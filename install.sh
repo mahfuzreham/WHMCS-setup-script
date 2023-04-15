@@ -1,4 +1,4 @@
-s #!/bin/bash -x
+#!/bin/bash -x
 exec > /tmp/installWHMCS.log 2>&1
 
 # Install nginx
