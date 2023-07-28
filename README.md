@@ -1,21 +1,18 @@
-# WHMCS Setup Bash Script
+# WHMCS setup script with LEMP, MariaDB, Let's Encrypt (optional)
 
-This bash script helps you set up a WHMCS installation on your web server. It will download the specified WHMCS version, configure permissions, create a database and user, and set up the necessary configurations. The setup process will be logged in the `whmcs_setup_log.txt` file.
+This bash script helps you set up a WHMCS installation on your web server. It will setup the specified WHMCS version, configure permissions, create a database and user, and set up the necessary configurations. The setup process will be logged in the `whmcs_setup_log.txt` file.
 
 ## Prerequisites
 
 Before running the script, make sure you have the following:
 
-- A web server (e.g., Apache, Nginx) installed and configured.
-- PHP installed on your server.
-- MySQL (or MariaDB) installed and configured.
+- A downloaded version of whmcs, you will be asked in the script. 
 - `wget` and `unzip` packages installed.
 
 ## Usage
 
 1. Modify the script variables in the `setup_whmcs.sh` file to match your environment:
 
-   - `WHMCS_VERSION`: The desired WHMCS version you want to install.
    - `WHMCS_INSTALL_DIR`: The installation directory for WHMCS on your server.
    - `DB_USER`: Your MySQL database username.
    - `DB_PASS`: Your MySQL database password.
@@ -32,9 +29,8 @@ chmod +x setup_whmcs.sh
 bash setup_whmcs.sh
 
 
-The script will download WHMCS, configure permissions, create a database, and set up the necessary configurations. After successful execution, you can access your WHMCS installation from your web browser.
+The script will install WHMCS, configure permissions, create a database, and set up the necessary configurations. After successful execution, you can access your WHMCS installation from your web browser.
 
-**Note:** This script is a basic example and may not cover all use cases. Review and customize it according to your specific requirements.
 
 ## Log File
 
